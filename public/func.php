@@ -13,3 +13,22 @@ function bot($method,$datas=[]){
         return json_decode($res);
     }
 }
+
+class seonExpress{
+    public function query($sorov){
+        global $conn;
+        return mysqli_query($conn, $sorov);
+    }
+    public function fetch_array($var){
+        return mysqli_fetch_all($var, MYSQLI_ASSOC);
+    }
+    function check_user($name){
+        $a = $this->query("SELECT * FROM users WHERE first_name = '{$name}'");
+
+        if (mysqli_num_rows($a) == 0)
+            return false;
+        else
+            return true;
+    }
+}
+

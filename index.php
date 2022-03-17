@@ -8,10 +8,16 @@ $message = $update->message;
 $cid = $message->chat->id;
 $name = $message->chat->first_name;
 $tx = $message->text;
+$query = new seonExpress();
 
 if ($tx == "/start"){
     bot('sendMessage',[
        'chat_id' =>$cid,
-       'text' =>"Assalomu alekum",
+       'text' =>"Salom",
     ]);
+    if (!$query->check_user($name)) {
+        $query->query("INSERT INTO users(`first_name`,`user_id`,`insert_at`) values('{$name}','{$cid}',NOW())");
+    }
 }
+
+
