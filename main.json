@@ -1,0 +1,44 @@
+{
+  "ok": true,
+  "result": [
+    {
+      "update_id": 560387976,
+      "message": {
+        "message_id": 83,
+        "from": {
+          "id": 2099880168,
+          "is_bot": false,
+          "first_name": "Admin",
+          "language_code": "uz"
+        },
+        "chat": {
+          "id": 2099880168,
+          "first_name": "Admin",
+          "type": "private"
+        },
+        "date": 1647593618,
+        "reply_to_message": {
+          "message_id": 82,
+          "from": {
+            "id": 5203963382,
+            "is_bot": true,
+            "first_name": "Online taxi",
+            "username": "taxi1234_bot"
+          },
+          "chat": {
+            "id": 2099880168,
+            "first_name": "Admin",
+            "type": "private"
+          },
+          "date": 1647593563,
+          "text": "Telefon raqam yuboring"
+        },
+        "contact": {
+          "phone_number": "998906622247",
+          "first_name": "Admin",
+          "user_id": 2099880168
+        }
+      }
+    }
+  ]
+}
